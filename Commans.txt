@@ -1,0 +1,34 @@
+GIT commands
+    git 
+
+    git 
+
+
+DVC commands
+
+
+Airflow commands
+    airflow db init
+    airflow scheduler &
+    airflow webserver --port 8080 &
+
+    use local host http://localhost:8080
+
+    additional:create user
+
+    airflow db upgrade  # Upgrade the database
+    airflow users create \ 
+        --username admin \
+        --password admin \
+        --firstname Bryan \
+        --lastname Hurtado \
+        --role Admin \
+        --email your@email.com
+
+
+
+GCP commads
+
+
+AWS Commands
+
