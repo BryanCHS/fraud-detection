@@ -1,13 +1,52 @@
 GIT commands
-    git 
+    #first set user 
+    git git config --global user.name "<Your Name>"x
+    git git config --global user.email "<your-email@example.com>"
 
-    git 
+    #generate a shh key to pair git account
+    ssh-keygen -t rsa -b 4096 -C "<your-email@example.com>"
+
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
+
+    cat ~/.ssh/id_rsa.pub
+
+    #add ssh key to github account Add SSH Key to GitHub Account Open your web browser and visit github.com. Sign in to your GitHub account and navigate to “Settings” -> “SSH and GPG keys” -> “New SSH key”.
+
+Give your SSH key a descriptive title, such as “Ubuntu SSH Key,” and paste your public key into the “Key” field.
+
+Click “Add SSH key” to save the key to your GitHub account.
+
+    #test connection
+    ssh -T git@github.com
+
+
+    #connecting with repoa
+    git clone https://github.com/kingabzpro/DataCamp-Git.git
+     
+    or git init     - git remote add origin https://github.com/kingabzpro/DataCamp-Git.git
+
+    git add .
+
+    git status
+
+    git commit -m "first commit"
+
+    git push
+   
+    #change of branches 
+    git checkout -b readme
+    git push origin readme:readme
 
 
 DVC commands
+    #initalize
+
+    #manage the datasets
 
 
 Airflow commands
+
     airflow db init
     airflow scheduler &
     airflow webserver --port 8080 &
@@ -25,10 +64,26 @@ Airflow commands
         --role Admin \
         --email your@email.com
 
+Dcoker commands
+
+    docker run <image_name>
+
+    docker pull <image_name> from dcoker repostiry
+
+    docker ps     list of running commands
+
+    dodcker stop <name>
+
+    docker start <name>
+
+    docker rm <name>
+
+GCP commads - useful commands to connect and interact with GCP
+    
+    g
+
+AWS Commands - useful commands to connect and interact with GCP
 
 
-GCP commads
-
-
-AWS Commands
+linux useful commands
 
